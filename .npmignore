@@ -1,0 +1,7 @@
+dist/
+.cache/
+.temp/
+logs/
+*.log
+src/
+example/
