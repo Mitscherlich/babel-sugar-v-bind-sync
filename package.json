@@ -1,0 +1,28 @@
+{
+  "name": "babel-sugar-v-bind-sync",
+  "version": "0.1.0",
+  "description": "Babel syntactic sugar for v-bind sync modifier support in Vue JSX",
+  "main": "lib/index.js",
+  "repository": "https://github.com/Mitscherlich/babel-sugar-v-bind-sync.git",
+  "author": "Mitscherlich <mitscherlich36@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel example/index.html",
+    "build": "rollup -c rollup.config.js",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "camelcase": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@rollup/plugin-babel": "^5.2.3",
+    "parcel": "^1.12.4",
+    "prismjs": "^1.23.0",
+    "regenerator-runtime": "^0.13.7",
+    "rollup": "^2.39.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
