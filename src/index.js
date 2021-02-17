@@ -1,7 +1,7 @@
 import syntaxJSX from '@babel/plugin-syntax-jsx';
 import camelize from 'camelcase';
 
-const syncRe = /(.*)\_sync/;
+let syncRe;
 
 function genListener(t, event, body) {
   return t.jSXAttribute(
@@ -16,12 +16,13 @@ function genAssignmentCode(t, model) {
   return t.ExpressionStatement(t.AssignmentExpression('=', model, t.Identifier('$$val')));
 }
 
-module.exports = function (babel) {
-  const t = babel.types;
+module.exports = function ({ types: t }) {
   return {
     inherits: syntaxJSX,
     visitor: {
-      JSXOpeningElement(path) {
+      JSXOpeningElement(path, state) {
+        const { delimiters = '_' } = state.opts || {};
+        syncRe = syncRe || new RegExp(`(.*)\\${delimiters}sync`);
         path.get('attributes').forEach((attr) => {
           try {
             const matched = attr.node.name.name.match(syncRe);
