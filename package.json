@@ -1,6 +1,6 @@
 {
   "name": "babel-sugar-v-bind-sync",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Babel syntactic sugar for v-bind sync modifier support in Vue JSX",
   "main": "lib/index.js",
   "repository": "https://github.com/Mitscherlich/babel-sugar-v-bind-sync.git",
