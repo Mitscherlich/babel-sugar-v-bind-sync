@@ -31,7 +31,7 @@ function highlight(code, lang) {
   </pre>`;
 }
 
-const $ = (...args) => document.querySelector(...args);
+const $ = (selector, context = document) => context.querySelector(selector);
 
 (async function () {
   const $source = $('#source');
