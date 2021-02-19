@@ -21,7 +21,7 @@ In your `.babelrc`:
 
 ```json
 {
-  "plugins": [["babel-sugar-v-bind-sync", { "delimiters": "_" }]]
+  "plugins": [["module:babel-sugar-v-bind-sync", { "delimiters": "_" }]]
 }
 ```
 
