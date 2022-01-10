@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "parcel example/index.html",
     "build": "rollup -c rollup.config.js",
-    "prepublish": "yarn build"
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.12.13",
