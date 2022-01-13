@@ -19,6 +19,7 @@
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@rollup/plugin-babel": "^5.2.3",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.2.1",
     "parcel": "^1.12.4",
     "prismjs": "^1.23.0",
     "regenerator-runtime": "^0.13.7",
