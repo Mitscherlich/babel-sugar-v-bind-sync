@@ -1,5 +1,6 @@
 dist/
 .cache/
+.parcel-cache/
 .temp/
 logs/
 *.log
