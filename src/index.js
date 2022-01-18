@@ -12,11 +12,8 @@ module.exports = (babel) => {
     return t.ExpressionStatement(t.AssignmentExpression('=', model, t.Identifier('$$val')));
   }
 
-  function genListenerCode(model) {
-    return t.ArrowFunctionExpression(
-      [t.Identifier('$$val')],
-      t.BlockStatement([genAssignmentCode(model)]),
-    );
+  function genListenerCode(model, body) {
+    return t.ArrowFunctionExpression([t.Identifier('$$val')], t.BlockStatement(body));
   }
 
   function tranformAttribute(event, value) {
@@ -119,13 +116,15 @@ module.exports = (babel) => {
     inherits: syntaxJSX,
     visitor: {
       JSXAttribute(path) {
-        const maybeAttribute = parseAttributeJSXAttribute(path);
-        if (maybeAttribute && !t.isJSXSpreadAttribute(maybeAttribute)) {
-          const { prop, value } = maybeAttribute;
+        const maybeSpreadNode = parseAttributeJSXAttribute(path);
+        if (maybeSpreadNode && !t.isJSXSpreadAttribute(maybeSpreadNode)) {
+          const { prop, value } = maybeSpreadNode;
           path.replaceWith(t.jSXAttribute(t.jSXIdentifier(prop), t.jSXExpressionContainer(value)));
           path.parent.attributes.push(
-            tranformAttribute(`onUpdate:${camelize(prop)}`, genListenerCode(value)),
-          );
+            tranformAttribute(`onUpdate:${camelize(prop)}`, genListenerCode(value, [
+              genAssignmentCode(model),
+            ])),
+          )
         }
       },
       JSXOpeningElement: {
