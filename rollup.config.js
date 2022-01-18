@@ -24,6 +24,7 @@ export default {
     {
       file: 'lib/index.js',
       format: 'cjs',
+      sourcemap: true,
     },
   ],
 };
