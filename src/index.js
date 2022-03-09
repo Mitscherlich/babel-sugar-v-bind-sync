@@ -12,7 +12,7 @@ module.exports = (babel) => {
     return t.ExpressionStatement(t.AssignmentExpression('=', model, t.Identifier('$$val')));
   }
 
-  function genListenerCode(model, body) {
+  function genListenerCode(body) {
     return t.ArrowFunctionExpression([t.Identifier('$$val')], t.BlockStatement(body));
   }
 
@@ -121,8 +121,8 @@ module.exports = (babel) => {
           const { prop, value } = maybeSpreadNode;
           path.replaceWith(t.jSXAttribute(t.jSXIdentifier(prop), t.jSXExpressionContainer(value)));
           path.parent.attributes.push(
-            tranformAttribute(`onUpdate:${camelize(prop)}`, genListenerCode(value, [
-              genAssignmentCode(model),
+            tranformAttribute(`onUpdate:${camelize(prop)}`, genListenerCode([
+              genAssignmentCode(value),
             ])),
           )
         }
