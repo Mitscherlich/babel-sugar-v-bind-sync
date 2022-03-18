@@ -67,7 +67,7 @@ module.exports = (babel) => {
 
     const valuePath = path.get('value');
 
-    if (!t.isJSXExpressionContainer(valuePath)) {
+    if (prefixes.includes(prefix) && !t.isJSXExpressionContainer(valuePath)) {
       throw new Error(
         `getAttribute (attribute value): should be an JSXExpressionContainer but got ${valuePath.type}`,
       );
