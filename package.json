@@ -13,7 +13,7 @@
     "dev": "parcel example/index.html",
     "build": "rollup -c rollup.config.js",
     "test": "vitest",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.16.7",
