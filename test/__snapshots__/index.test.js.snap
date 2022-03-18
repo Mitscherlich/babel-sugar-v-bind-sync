@@ -1,9 +1,7 @@
 // Vitest Snapshot v1
 
 exports[`should compiled match snapshot 1`] = `
-{
-  "ast": null,
-  "code": "import _mergeJSXProps5 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
+"import _mergeJSXProps5 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
 import _mergeJSXProps4 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
 import _mergeJSXProps3 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
 import _mergeJSXProps2 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
@@ -72,105 +70,5 @@ function createApp() {
       }
     }
   }]), [\\"This will be ok\\"])]);
-}",
-  "externalDependencies": Set {},
-  "map": null,
-  "metadata": {},
-  "options": {
-    "assumptions": {},
-    "babelrc": false,
-    "browserslistConfigFile": false,
-    "cloneInputAst": true,
-    "configFile": false,
-    "cwd": "/Users/mitscherlich/Development/projects/babel-sugar-v-bind-sync",
-    "envName": "test",
-    "generatorOpts": {
-      "auxiliaryCommentAfter": undefined,
-      "auxiliaryCommentBefore": undefined,
-      "comments": true,
-      "compact": "auto",
-      "filename": undefined,
-      "minified": undefined,
-      "retainLines": undefined,
-      "shouldPrintComment": undefined,
-      "sourceFileName": "unknown",
-      "sourceMaps": false,
-      "sourceRoot": undefined,
-    },
-    "parserOpts": {
-      "plugins": [
-        "jsx",
-        "jsx",
-        "jsx",
-      ],
-      "sourceFileName": undefined,
-      "sourceType": "module",
-    },
-    "passPerPreset": false,
-    "plugins": [
-      Plugin {
-        "externalDependencies": [],
-        "generatorOverride": undefined,
-        "key": "syntax-jsx",
-        "manipulateOptions": [Function],
-        "options": {},
-        "parserOverride": undefined,
-        "post": undefined,
-        "pre": undefined,
-        "visitor": {
-          "_exploded": true,
-          "_verified": true,
-        },
-      },
-      Plugin {
-        "externalDependencies": [],
-        "generatorOverride": undefined,
-        "key": "base$1",
-        "manipulateOptions": [Function],
-        "options": {},
-        "parserOverride": undefined,
-        "post": undefined,
-        "pre": undefined,
-        "visitor": {
-          "JSXAttribute": {
-            "enter": [
-              [Function],
-            ],
-          },
-          "JSXOpeningElement": {
-            "exit": [
-              [Function],
-            ],
-          },
-          "_exploded": {},
-          "_verified": {},
-        },
-      },
-      Plugin {
-        "externalDependencies": [],
-        "generatorOverride": undefined,
-        "key": "babel-plugin-transform-vue-jsx",
-        "manipulateOptions": [Function],
-        "options": {},
-        "parserOverride": undefined,
-        "post": undefined,
-        "pre": undefined,
-        "visitor": {
-          "JSXElement": {
-            "exit": [
-              [Function],
-            ],
-          },
-          "_exploded": {},
-          "_verified": {},
-        },
-      },
-    ],
-    "presets": [],
-    "root": "/Users/mitscherlich/Development/projects/babel-sugar-v-bind-sync",
-    "rootMode": "root",
-    "targets": {},
-  },
-  "sourceType": "module",
-}
+}"
 `;

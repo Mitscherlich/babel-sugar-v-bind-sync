@@ -4,7 +4,7 @@ import transformJsx from '@vue/babel-plugin-transform-vue-jsx';
 import syntaxJSX from '@babel/plugin-syntax-jsx';
 import vBindSync from '..';
 
-const input = `function createApp() {
+const code = `function createApp() {
   return (
     <div>
       <component visible_sync={this.test} foo="bar">This will be ok</component>
@@ -17,9 +17,13 @@ const input = `function createApp() {
 }`
 
 it('should compiled match snapshot', async () => {
-  const output = await transformAsync(input, {
-    plugins: [syntaxJSX, vBindSync, transformJsx],
-  })
+  const output = await compile(code)
 
   expect(output).matchSnapshot()
 })
+
+function compile(input) {
+  return transformAsync(input, {
+    plugins: [syntaxJSX, vBindSync, transformJsx],
+  }).then(({ code }) => code)
+}
