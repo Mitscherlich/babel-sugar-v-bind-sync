@@ -27,7 +27,7 @@
     "parcel": "2.4.1",
     "prismjs": "1.27.0",
     "regenerator-runtime": "0.13.9",
-    "rollup": "2.70.1",
+    "rollup": "2.70.2",
     "rollup-plugin-terser": "7.0.2",
     "vitest": "0.9.3"
   }
