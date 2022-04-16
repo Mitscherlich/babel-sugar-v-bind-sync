@@ -19,6 +19,8 @@ const code = `function createApp() {
       <component visible_sync={this.test.a} open_sync={this.test.b}>This will be ok</component>
       {/* a sync prop & \`v-on\` listener */}
       <component visible_sync={this.test} on={{click:this.test}}>This will be ok</component>
+      {/* a sync prop & spread props */}
+      <component visible_sync={this.test.a} {...{ props: { foo: 'bar' } }}>This will be ok</component>
     </div>
   )
 }`

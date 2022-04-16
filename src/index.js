@@ -86,6 +86,7 @@ module.exports = (babel) => {
     const matched = name.match(syncRe);
 
     if (matched != null) {
+      const prop = matched[1]
       if (!t.isMemberExpression(value)) {
         const parentPath = path.get('parent');
         const parentName = parentPath.get('name.name').node;
@@ -93,8 +94,7 @@ module.exports = (babel) => {
           `getAttribute (attribute value): You should use MemberExpression with sync modifier, prop [${prop}] on node [${parentName}]`,
         );
       }
-
-      return { prop: matched[1], value };
+      return { prop, value };
     }
 
     if (prefix) {
@@ -115,7 +115,9 @@ module.exports = (babel) => {
     const attributes = {};
 
     paths.forEach((path) => {
-      parseAttributeJSXAttribute(path, attributes);
+      if (t.isJSXAttribute(path)) {
+        parseAttributeJSXAttribute(path, attributes);
+      }
     });
 
     return !!Object.entries(attributes).length && transformAttributes(attributes);
@@ -125,15 +127,17 @@ module.exports = (babel) => {
     inherits: syntaxJSX,
     visitor: {
       JSXAttribute(path) {
-        const maybeSpreadNode = parseAttributeJSXAttribute(path);
-        if (maybeSpreadNode && !t.isJSXSpreadAttribute(maybeSpreadNode)) {
-          const { prop, value } = maybeSpreadNode;
-          path.replaceWith(t.jSXAttribute(t.jSXIdentifier(prop), t.jSXExpressionContainer(value)));
-          path.parent.attributes.push(
-            tranformAttribute(`onUpdate:${camelize(prop)}`, genListenerCode([
-              genAssignmentCode(value),
-            ])),
-          )
+        if (t.isJSXAttribute(path)) {
+          const maybeSpreadNode = parseAttributeJSXAttribute(path);
+          if (maybeSpreadNode && !t.isJSXSpreadAttribute(maybeSpreadNode)) {
+            const { prop, value } = maybeSpreadNode;
+            path.replaceWith(t.jSXAttribute(t.jSXIdentifier(prop), t.jSXExpressionContainer(value)));
+            path.parent.attributes.push(
+              tranformAttribute(`onUpdate:${camelize(prop)}`, genListenerCode([
+                genAssignmentCode(value),
+              ])),
+            )
+          }
         }
       },
       JSXOpeningElement: {
