@@ -1,7 +1,8 @@
 // Vitest Snapshot v1
 
 exports[`should compiled match snapshot 1`] = `
-"import _mergeJSXProps5 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
+"import _mergeJSXProps6 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
+import _mergeJSXProps5 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
 import _mergeJSXProps4 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
 import _mergeJSXProps3 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
 import _mergeJSXProps2 from \\"@vue/babel-helper-vue-jsx-merge-props\\";
@@ -44,6 +45,17 @@ function createApp() {
   }]), [\\"This will be ok\\"]), h(\\"component\\", _mergeJSXProps4([{
     \\"attrs\\": {
       \\"visible\\": this.test.a,
+      \\"bool\\": true
+    }
+  }, {
+    \\"on\\": {
+      \\"update:visible\\": $$val => {
+        this.test.a = $$val;
+      }
+    }
+  }]), [\\"This will be ok\\"]), h(\\"component\\", _mergeJSXProps5([{
+    \\"attrs\\": {
+      \\"visible\\": this.test.a,
       \\"open\\": this.test.b
     }
   }, {
@@ -55,7 +67,7 @@ function createApp() {
         this.test.b = $$val;
       }
     }
-  }]), [\\"This will be ok\\"]), h(\\"component\\", _mergeJSXProps5([{
+  }]), [\\"This will be ok\\"]), h(\\"component\\", _mergeJSXProps6([{
     \\"attrs\\": {
       \\"visible\\": this.test
     }

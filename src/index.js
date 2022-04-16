@@ -73,7 +73,16 @@ module.exports = (babel) => {
       );
     }
 
-    const value = valuePath.get('expression').node;
+    let value
+    if (!valuePath.node) {
+      value = t.booleanLiteral(true);
+    } else if (t.isStringLiteral(valuePath.node)) {
+      value = valuePath.node
+    } else if (t.isJSXExpressionContainer(valuePath)) {
+      value = valuePath.get('expression').node;
+    } else {
+      throw new Error(`getAttributes (attribute value): ${valuePath.type} is not supported`)
+    }
     const matched = name.match(syncRe);
 
     if (matched != null) {
