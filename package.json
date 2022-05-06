@@ -29,6 +29,6 @@
     "regenerator-runtime": "0.13.9",
     "rollup": "2.72.0",
     "rollup-plugin-terser": "7.0.2",
-    "vitest": "0.10.4"
+    "vitest": "0.10.5"
   }
 }
