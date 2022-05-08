@@ -12,7 +12,7 @@ specifiers:
   regenerator-runtime: 0.13.9
   rollup: 2.72.0
   rollup-plugin-terser: 7.0.2
-  vitest: 0.10.5
+  vitest: 0.12.0
 
 dependencies:
   '@babel/plugin-syntax-jsx': 7.16.7_@babel+core@7.17.10
@@ -28,7 +28,7 @@ devDependencies:
   regenerator-runtime: 0.13.9
   rollup: 2.72.0
   rollup-plugin-terser: 7.0.2_rollup@2.72.0
-  vitest: 0.10.5
+  vitest: 0.12.0
 
 packages:
 
@@ -319,6 +319,8 @@ packages:
     resolution: {integrity: sha512-n2Q6i+fnJqzOaq2VkdXxy2TCPCWQZHiCo0XqmrCvDWcZQKRyZzYi4Z0yxlBuN0w+r2ZHmre+Q087DSrw3pbJDQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.17.10
     dev: true
 
   /@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/7.16.7_@babel+core@7.17.10:
@@ -2916,6 +2918,9 @@ packages:
     resolution: {integrity: sha512-er0mj/BaMjWyzQ/jedLUi/LNAuQcFT8lCvoNqANF+jTaX9rohaBwxIvKVJVAZgyCnmyfbbldp496wPMW0R0+CA==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
+    peerDependenciesMeta:
+      '@parcel/core':
+        optional: true
     dependencies:
       '@parcel/config-default': 2.5.0_@parcel+core@2.5.0
       '@parcel/core': 2.5.0
@@ -3309,8 +3314,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.10.5:
-    resolution: {integrity: sha512-4qXdNbHwAd9YcsztJoVMWUQGcMATVlY9Xd95I3KQ2JJwDLTL97f/jgfGRotqptvNxdlmme5TBY0Gv+l6+JSYvA==}
+  /vitest/0.12.0:
+    resolution: {integrity: sha512-ITdIJJ5nl7eu2Iq4oON/wgpgRbhUR+50ShdMsUw87zByzjtJIx2vPbkz+J8Bq6eEUvyy8p7j0bU1sB/xWz05bw==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
