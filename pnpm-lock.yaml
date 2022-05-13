@@ -12,7 +12,7 @@ specifiers:
   regenerator-runtime: 0.13.9
   rollup: 2.72.1
   rollup-plugin-terser: 7.0.2
-  vitest: 0.12.4
+  vitest: 0.12.5
 
 dependencies:
   '@babel/plugin-syntax-jsx': 7.16.7_@babel+core@7.17.10
@@ -28,7 +28,7 @@ devDependencies:
   regenerator-runtime: 0.13.9
   rollup: 2.72.1
   rollup-plugin-terser: 7.0.2_rollup@2.72.1
-  vitest: 0.12.4
+  vitest: 0.12.5
 
 packages:
 
@@ -3314,8 +3314,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.12.4:
-    resolution: {integrity: sha512-EDxdhlAt6vcu6y4VouAI60z78iCAVFnfBL4VlSQVQnGmOk5altOtIKvp3xfZ+cfo4iVHgqq1QNyf5qOFiL4leg==}
+  /vitest/0.12.5:
+    resolution: {integrity: sha512-cUq1HZDrY6pZlu19ToD71Np1dm/IUxS0eXdyd9EvpKy7vdroXGr6aI4ggB+TGQM/gz6P/3Tsk4n0yvcSjpe1ow==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
