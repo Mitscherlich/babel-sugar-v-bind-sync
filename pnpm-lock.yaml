@@ -6,7 +6,7 @@ specifiers:
   '@babel/preset-env': 7.18.2
   '@rollup/plugin-babel': 5.3.1
   '@vue/babel-plugin-transform-vue-jsx': 1.2.1
-  camelcase: ^6.3.0
+  camelcase: ^7.0.0
   parcel: 2.6.0
   prismjs: 1.28.0
   regenerator-runtime: 0.13.9
@@ -16,7 +16,7 @@ specifiers:
 
 dependencies:
   '@babel/plugin-syntax-jsx': 7.16.7_@babel+core@7.18.2
-  camelcase: 6.3.0
+  camelcase: 7.0.0
 
 devDependencies:
   '@babel/core': 7.18.2
@@ -2158,9 +2158,9 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /camelcase/6.3.0:
-    resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
-    engines: {node: '>=10'}
+  /camelcase/7.0.0:
+    resolution: {integrity: sha512-JToIvOmz6nhGsUhAYScbo2d6Py5wojjNfoxoc2mEVLUdJ70gJK2gnd+ABY1Tc3sVMyK7QDPtN0T/XdlCQWITyQ==}
+    engines: {node: '>=14.16'}
     dev: false
 
   /caniuse-lite/1.0.30001334:
