@@ -8,7 +8,7 @@ specifiers:
   '@vue/babel-plugin-transform-vue-jsx': 1.2.1
   camelcase: ^7.0.0
   parcel: 2.7.0
-  prismjs: 1.28.0
+  prismjs: 1.29.0
   regenerator-runtime: 0.13.9
   rollup: 2.78.1
   rollup-plugin-terser: 7.0.2
@@ -24,7 +24,7 @@ devDependencies:
   '@rollup/plugin-babel': 5.3.1_2uin6pbxavst3oir53roxbd5qi
   '@vue/babel-plugin-transform-vue-jsx': 1.2.1_@babel+core@7.18.13
   parcel: 2.7.0
-  prismjs: 1.28.0
+  prismjs: 1.29.0
   regenerator-runtime: 0.13.9
   rollup: 2.78.1
   rollup-plugin-terser: 7.0.2_rollup@2.78.1
@@ -3075,8 +3075,8 @@ packages:
       posthtml-render: 3.0.0
     dev: true
 
-  /prismjs/1.28.0:
-    resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
+  /prismjs/1.29.0:
+    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
     engines: {node: '>=6'}
     dev: true
 
