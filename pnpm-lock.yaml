@@ -9,7 +9,7 @@ specifiers:
   camelcase: ^7.0.0
   parcel: 2.7.0
   prismjs: 1.29.0
-  regenerator-runtime: 0.13.9
+  regenerator-runtime: 0.13.10
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2
   vitest: 0.24.3
@@ -25,7 +25,7 @@ devDependencies:
   '@vue/babel-plugin-transform-vue-jsx': 1.4.0_@babel+core@7.19.3
   parcel: 2.7.0
   prismjs: 1.29.0
-  regenerator-runtime: 0.13.9
+  regenerator-runtime: 0.13.10
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2_rollup@2.79.1
   vitest: 0.24.3
@@ -1141,7 +1141,7 @@ packages:
     resolution: {integrity: sha512-L6rvG9GDxaLgFjg41K+5Yv9OMrU98sWe+Ykmc6FDJW/+vYZMhdOMKkISgzptMaERHvS2Y2lw9MDRm2gHhlQQoA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.10
     dev: true
 
   /@babel/template/7.18.10:
@@ -1907,7 +1907,7 @@ packages:
       browserslist: 4.21.3
       detect-libc: 1.0.3
       nullthrows: 1.1.1
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.10
       semver: 5.7.1
     dev: true
 
@@ -3122,8 +3122,8 @@ packages:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
     dev: true
 
-  /regenerator-runtime/0.13.9:
-    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+  /regenerator-runtime/0.13.10:
+    resolution: {integrity: sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==}
     dev: true
 
   /regenerator-transform/0.15.0:
