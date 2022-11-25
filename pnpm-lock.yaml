@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.19.3
   '@babel/plugin-syntax-jsx': ^7.16.7
   '@babel/preset-env': 7.19.4
-  '@rollup/plugin-babel': 6.0.2
+  '@rollup/plugin-babel': 6.0.3
   '@vue/babel-plugin-transform-vue-jsx': 1.4.0
   camelcase: ^7.0.0
   parcel: 2.8.0
@@ -21,7 +21,7 @@ dependencies:
 devDependencies:
   '@babel/core': 7.19.3
   '@babel/preset-env': 7.19.4_@babel+core@7.19.3
-  '@rollup/plugin-babel': 6.0.2_vy4anxjpv2s44kyfi2kxqu576u
+  '@rollup/plugin-babel': 6.0.3_vy4anxjpv2s44kyfi2kxqu576u
   '@vue/babel-plugin-transform-vue-jsx': 1.4.0_@babel+core@7.19.3
   parcel: 2.8.0
   prismjs: 1.29.0
@@ -1964,8 +1964,8 @@ packages:
       nullthrows: 1.1.1
     dev: true
 
-  /@rollup/plugin-babel/6.0.2_vy4anxjpv2s44kyfi2kxqu576u:
-    resolution: {integrity: sha512-Vnt8XIWYwCf3MD7qhBWYlP9pjSZvcE++nlPXhQYw6YNehl5742AzFbrV6h4BHb20VAOVUlIksVLymQCTwVCGDg==}
+  /@rollup/plugin-babel/6.0.3_vy4anxjpv2s44kyfi2kxqu576u:
+    resolution: {integrity: sha512-fKImZKppa1A/gX73eg4JGo+8kQr/q1HBQaCGKECZ0v4YBBv3lFqi14+7xyApECzvkLTHCifx+7ntcrvtBIRcpg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
