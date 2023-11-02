@@ -24,7 +24,7 @@
     "@babel/preset-env": "7.19.4",
     "@rollup/plugin-babel": "6.0.4",
     "@vue/babel-plugin-transform-vue-jsx": "1.4.0",
-    "parcel": "2.10.1",
+    "parcel": "2.10.2",
     "prismjs": "1.29.0",
     "regenerator-runtime": "0.14.0",
     "rollup": "2.79.1",
