@@ -20,8 +20,8 @@
     "camelcase": "^8.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.24.0",
-    "@babel/preset-env": "7.24.0",
+    "@babel/core": "7.24.1",
+    "@babel/preset-env": "7.24.1",
     "@rollup/plugin-babel": "6.0.4",
     "@vue/babel-plugin-transform-vue-jsx": "1.4.0",
     "parcel": "2.12.0",
